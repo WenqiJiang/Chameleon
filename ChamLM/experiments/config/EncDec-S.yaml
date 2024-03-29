@@ -1,0 +1,19 @@
+### Base LLM parameters ###
+model_name: "EncDec-S"
+dim : 512
+layers_encoder : 2
+layers_decoder : 24
+attention_heads : 8
+model_type : "encoder-decoder"
+
+### Parameters tied to the model's experiments ###
+use_coordinator: 1
+k : 10
+retrieval_token_len : 64
+seq_len : 512
+nlist: 32768
+nprobe: 32
+dbname: RALM-S1000M # 1000M 
+index_key: "IVF32768,PQ32"
+index_dir: "/mnt/scratch/wenqi/Faiss_experiments/trained_CPU_indexes/bench_cpu_RALM-S1000M_IVF32768,PQ32/" # 2000M 
+centroids_dir: "/mnt/scratch/wenqi/Faiss_Enzian_U250_index/RALM-S1000M_IVF32768,PQ32/vector_quantizer_float32_32768_512_raw"

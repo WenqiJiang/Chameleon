@@ -1,0 +1,8 @@
+# Vector search config
+dbname : Deep1000M
+index_key: "IVF32768,PQ16"
+dim : 96
+k : 100
+nlist: 32768
+nprobe: 32
+centroids_dir: "/mnt/scratch/wenqi/Faiss_Enzian_U250_index/Deep1000M_IVF32768,PQ16/vector_quantizer_float32_32768_96_raw"

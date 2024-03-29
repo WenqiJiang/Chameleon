@@ -1,0 +1,8 @@
+# Vector search config
+dbname : RALM-S2000M
+index_key: "IVF32768,PQ32"
+dim : 512
+k : 100
+nlist: 32768
+nprobe: 32
+centroids_dir: "/mnt/scratch/wenqi/Faiss_Enzian_U250_index/RALM-S1000M_IVF32768,PQ32/vector_quantizer_float32_32768_512_raw"

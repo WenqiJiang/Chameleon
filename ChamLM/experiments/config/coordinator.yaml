@@ -1,0 +1,20 @@
+### Base coordinator config file ###
+
+# space separated list of search server hosts & ports
+local_host: "127.0.0.1"
+local_port: 8889
+
+### The following paramaters can be overwritten in the coordinator config file ### 
+
+# purely runtime parameters
+# search_server_host: "127.0.0.1" # "127.0.0.1 127.0.0.1"
+# search_server_port: "9091" # "9091 9092"
+# ngpus: 1
+# batch_size: 32
+# num_queries_per_gpu: 10
+# request_with_lists: 0
+
+# # loaded from the model config file
+# k: 10
+# dim: 512
+# nprobe: 32

@@ -1,0 +1,34 @@
+# A collection of runtime parameters for RALM
+
+# runtime input (server)search_server_host: 127.0.0.1
+search_server_host: 127.0.0.1
+# search_server_host: 10.1.212.110 # hacc-build-01
+search_server_port: 9091
+
+# batch arguments
+batch_size: 1
+n_warmup_batch: 1
+n_batch: 3
+
+# retrieval arguments
+retrieval_interval: 1
+request_with_lists: 0
+
+# latency vs throughput
+use_tiktok: 0
+
+# profiling arguments
+save_profiling: 1
+architecture: "8CPU" # search server architecture '1FPGA-1GPU', for saving the profile
+profile_dir: 'performance_results'
+profile_fname: 'RALM_latency_throughput_CPU_GPU'
+
+# GPU settings (LLM)
+llm_ngpus: 1
+llm_start_gpu_id: 1 # null
+
+# Faiss server setting
+search_device: 'cpu'
+search_ngpu: 1
+search_omp_threads: 8
+

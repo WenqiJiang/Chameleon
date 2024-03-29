@@ -1,0 +1,8 @@
+# Vector search config
+dbname : SIFT1000M
+index_key: "IVF32768,PQ16"
+dim : 128
+k : 100
+nlist: 32768
+nprobe: 32
+centroids_dir: "/mnt/scratch/wenqi/Faiss_Enzian_U250_index/SIFT1000M_IVF32768,PQ16/vector_quantizer_float32_32768_128_raw"

@@ -1,0 +1,20 @@
+### Base LLM parameters ###
+model_name: "Dec-L"
+dim : 1024
+layers_encoder : 2
+layers_decoder : 96
+attention_heads : 16
+model_type : "decoder"
+
+### Parameters tied to the model's experiments ###
+use_coordinator: 1
+k : 100
+retrieval_token_len : 1 
+seq_len : 512
+nlist: 32768
+nprobe: 32
+dbname: RALM-L1000M # 1000M 
+index_key: "IVF32768,PQ64"
+index_dir: "/mnt/scratch/wenqi/Faiss_experiments/trained_CPU_indexes/bench_cpu_RALM-L1000M_IVF32768,PQ64/" # 2000M 
+centroids_dir: "/mnt/scratch/wenqi/Faiss_Enzian_U250_index/RALM-L1000M_IVF32768,PQ64/vector_quantizer_float32_32768_1024_raw"
+
